@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		276124955E38592A21C7F4E6 /* Pods_Scholacore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DF57F0F1B82226F87FF61D /* Pods_Scholacore.framework */; };
+		33F030189C001E3D0455D7AA /* Pods_ScholacoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616FBF3AE371D1C25CA1B770 /* Pods_ScholacoreUITests.framework */; };
+		ACEBD9FF43D73A29F906C4DB /* Pods_ScholacoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E6A8C00F71BF23B9FDB22A4 /* Pods_ScholacoreTests.framework */; };
+		EE1193AE1EB7906A00A9768A /* userProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1193AD1EB7906A00A9768A /* userProfileModel.swift */; };
+		EE1BA5D81EB62E4F0044667A /* signupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BA5D71EB62E4F0044667A /* signupViewModel.swift */; };
+		EE842A6D1EB04BD60010DB74 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE842A6C1EB04BD60010DB74 /* testViewController.swift */; };
+		EE8EB7651EB32D8D00095309 /* ProfileSetupPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EB7641EB32D8D00095309 /* ProfileSetupPageViewController.swift */; };
+		EE8EB7671EB346CA00095309 /* displaypictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EB7661EB346CA00095309 /* displaypictureViewController.swift */; };
+		EE8EB7691EB3622A00095309 /* profileSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EB7681EB3622A00095309 /* profileSetupViewController.swift */; };
+		EE8EB76B1EB4580D00095309 /* userProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EB76A1EB4580D00095309 /* userProfileTableViewController.swift */; };
+		EE8EB76E1EB46DF700095309 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE8EB76C1EB46DF700095309 /* Model.xcdatamodeld */; };
+		EE8EB7AD1EB4BCA100095309 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EB7AC1EB4BCA100095309 /* MainTabBarVC.swift */; };
+		EE8EB7B41EB5B94800095309 /* loginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EB7B31EB5B94800095309 /* loginViewModel.swift */; };
+		EE9458C91EADA2A100873A59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9458C81EADA2A100873A59 /* AppDelegate.swift */; };
+		EE9458CB1EADA2A100873A59 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9458CA1EADA2A100873A59 /* FirstViewController.swift */; };
+		EE9458CD1EADA2A100873A59 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9458CC1EADA2A100873A59 /* SecondViewController.swift */; };
+		EE9458D01EADA2A100873A59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9458CE1EADA2A100873A59 /* Main.storyboard */; };
+		EE9458D21EADA2A100873A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9458D11EADA2A100873A59 /* Assets.xcassets */; };
+		EE9458D51EADA2A100873A59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9458D31EADA2A100873A59 /* LaunchScreen.storyboard */; };
+		EE9458E01EADA2A100873A59 /* ScholacoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9458DF1EADA2A100873A59 /* ScholacoreTests.swift */; };
+		EE9458EB1EADA2A100873A59 /* ScholacoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9458EA1EADA2A100873A59 /* ScholacoreUITests.swift */; };
+		EE9458F91EADA47800873A59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE9458F81EADA47800873A59 /* GoogleService-Info.plist */; };
+		EEB5C4E21EAED499005F7199 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C4E11EAED499005F7199 /* SignupVC.swift */; };
+		EEB5C4E61EAED9D6005F7199 /* extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5C4E51EAED9D6005F7199 /* extentions.swift */; };
+		EECBA0521EB9F5DC00CEBB3B /* ProfileSetupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBA0511EB9F5DB00CEBB3B /* ProfileSetupModel.swift */; };
+		EECBA0541EBA015700CEBB3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECBA0531EBA015700CEBB3B /* Constants.swift */; };
+		EEF47EFA1EC59D430096F008 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47EF91EC59D430096F008 /* Post.swift */; };
+		EEF47EFF1EC5ACB90096F008 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47EFE1EC5ACB90096F008 /* Reachability.swift */; };
+		EEF47F011EC5AEB20096F008 /* ClassFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F001EC5AEB20096F008 /* ClassFeedViewModel.swift */; };
+		EEF47F061EC69D6B0096F008 /* PostCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F041EC69D6B0096F008 /* PostCollectionCell.swift */; };
+		EEF47F071EC69D6B0096F008 /* PostCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEF47F051EC69D6B0096F008 /* PostCollectionCell.xib */; };
+		EEF47F091EC6D1570096F008 /* ClassFeedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F081EC6D1570096F008 /* ClassFeedSectionController.swift */; };
+		EEF47F0B1EC7285E0096F008 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F0A1EC7285E0096F008 /* FeedModel.swift */; };
+		EEF47F0D1EC8611F0096F008 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F0C1EC8611F0096F008 /* DetailViewController.swift */; };
+		EEF47F0F1ECAFD540096F008 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F0E1ECAFD530096F008 /* TimeTableViewCell.swift */; };
+		EEF47F111ECAFD730096F008 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F101ECAFD730096F008 /* TimeTableViewController.swift */; };
+		EEF47F131ECC38A30096F008 /* Lecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF47F121ECC38A20096F008 /* Lecture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE9458DC1EADA2A100873A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE9458BD1EADA2A000873A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE9458C41EADA2A100873A59;
+			remoteInfo = Scholacore;
+		};
+		EE9458E71EADA2A100873A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE9458BD1EADA2A000873A59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE9458C41EADA2A100873A59;
+			remoteInfo = Scholacore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29C881622F11BBB79F7EC0F4 /* Pods-ScholacoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScholacoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScholacoreUITests/Pods-ScholacoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54979BCDDA7BC56E7B4C695D /* Pods-ScholacoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScholacoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScholacoreTests/Pods-ScholacoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		616FBF3AE371D1C25CA1B770 /* Pods_ScholacoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScholacoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6A8C00F71BF23B9FDB22A4 /* Pods_ScholacoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScholacoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DF57F0F1B82226F87FF61D /* Pods_Scholacore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scholacore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		785EFA4CA7991174FB21BC68 /* Pods-Scholacore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scholacore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scholacore/Pods-Scholacore.debug.xcconfig"; sourceTree = "<group>"; };
+		8ED7E9D5921CA90FF693F0D2 /* Pods-ScholacoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScholacoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScholacoreTests/Pods-ScholacoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A43911A8385D04CC3D2597B2 /* Pods-Scholacore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scholacore.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scholacore/Pods-Scholacore.release.xcconfig"; sourceTree = "<group>"; };
+		C6288EF80992C7BC829E1D5E /* Pods-ScholacoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScholacoreUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScholacoreUITests/Pods-ScholacoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1193AD1EB7906A00A9768A /* userProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileModel.swift; sourceTree = "<group>"; };
+		EE1BA5D71EB62E4F0044667A /* signupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signupViewModel.swift; sourceTree = "<group>"; };
+		EE842A6C1EB04BD60010DB74 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		EE8EB7641EB32D8D00095309 /* ProfileSetupPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSetupPageViewController.swift; sourceTree = "<group>"; };
+		EE8EB7661EB346CA00095309 /* displaypictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displaypictureViewController.swift; sourceTree = "<group>"; };
+		EE8EB7681EB3622A00095309 /* profileSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileSetupViewController.swift; sourceTree = "<group>"; };
+		EE8EB76A1EB4580D00095309 /* userProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfileTableViewController.swift; sourceTree = "<group>"; };
+		EE8EB76D1EB46DF700095309 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		EE8EB7AC1EB4BCA100095309 /* MainTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		EE8EB7B31EB5B94800095309 /* loginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewModel.swift; sourceTree = "<group>"; };
+		EE9458C51EADA2A100873A59 /* Scholacore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scholacore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9458C81EADA2A100873A59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE9458CA1EADA2A100873A59 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		EE9458CC1EADA2A100873A59 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EE9458CF1EADA2A100873A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE9458D11EADA2A100873A59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9458D41EADA2A100873A59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE9458D61EADA2A100873A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9458DB1EADA2A100873A59 /* ScholacoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScholacoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9458DF1EADA2A100873A59 /* ScholacoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholacoreTests.swift; sourceTree = "<group>"; };
+		EE9458E11EADA2A100873A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9458E61EADA2A100873A59 /* ScholacoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScholacoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9458EA1EADA2A100873A59 /* ScholacoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholacoreUITests.swift; sourceTree = "<group>"; };
+		EE9458EC1EADA2A100873A59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9458F81EADA47800873A59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEB5C4E11EAED499005F7199 /* SignupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		EEB5C4E51EAED9D6005F7199 /* extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extentions.swift; sourceTree = "<group>"; };
+		EEB61F471ECDCCEE00BD1935 /* Scholacore.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scholacore.entitlements; sourceTree = "<group>"; };
+		EECBA0511EB9F5DB00CEBB3B /* ProfileSetupModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSetupModel.swift; sourceTree = "<group>"; };
+		EECBA0531EBA015700CEBB3B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEF47EF91EC59D430096F008 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EEF47EFE1EC5ACB90096F008 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EEF47F001EC5AEB20096F008 /* ClassFeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassFeedViewModel.swift; sourceTree = "<group>"; };
+		EEF47F041EC69D6B0096F008 /* PostCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCollectionCell.swift; sourceTree = "<group>"; };
+		EEF47F051EC69D6B0096F008 /* PostCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCollectionCell.xib; sourceTree = "<group>"; };
+		EEF47F081EC6D1570096F008 /* ClassFeedSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassFeedSectionController.swift; sourceTree = "<group>"; };
+		EEF47F0A1EC7285E0096F008 /* FeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		EEF47F0C1EC8611F0096F008 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EEF47F0E1ECAFD530096F008 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		EEF47F101ECAFD730096F008 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		EEF47F121ECC38A20096F008 /* Lecture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lecture.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE9458C21EADA2A100873A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276124955E38592A21C7F4E6 /* Pods_Scholacore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9458D81EADA2A100873A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEBD9FF43D73A29F906C4DB /* Pods_ScholacoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9458E31EADA2A100873A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F030189C001E3D0455D7AA /* Pods_ScholacoreUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27B2890E553AB4CC4A367AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				785EFA4CA7991174FB21BC68 /* Pods-Scholacore.debug.xcconfig */,
+				A43911A8385D04CC3D2597B2 /* Pods-Scholacore.release.xcconfig */,
+				8ED7E9D5921CA90FF693F0D2 /* Pods-ScholacoreTests.debug.xcconfig */,
+				54979BCDDA7BC56E7B4C695D /* Pods-ScholacoreTests.release.xcconfig */,
+				C6288EF80992C7BC829E1D5E /* Pods-ScholacoreUITests.debug.xcconfig */,
+				29C881622F11BBB79F7EC0F4 /* Pods-ScholacoreUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D77701841A9BE862C7EECA6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77DF57F0F1B82226F87FF61D /* Pods_Scholacore.framework */,
+				6E6A8C00F71BF23B9FDB22A4 /* Pods_ScholacoreTests.framework */,
+				616FBF3AE371D1C25CA1B770 /* Pods_ScholacoreUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE4491211EBDF96D000ECF73 /* tabbarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE8EB7AC1EB4BCA100095309 /* MainTabBarVC.swift */,
+				EE9458CC1EADA2A100873A59 /* SecondViewController.swift */,
+				EE9458CA1EADA2A100873A59 /* FirstViewController.swift */,
+				EE8EB76A1EB4580D00095309 /* userProfileTableViewController.swift */,
+				EEF47F101ECAFD730096F008 /* TimeTableViewController.swift */,
+			);
+			name = tabbarControllers;
+			sourceTree = "<group>";
+		};
+		EE8EB7B21EB5B91500095309 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE8EB7B31EB5B94800095309 /* loginViewModel.swift */,
+				EE1BA5D71EB62E4F0044667A /* signupViewModel.swift */,
+				EE1193AD1EB7906A00A9768A /* userProfileModel.swift */,
+				EECBA0511EB9F5DB00CEBB3B /* ProfileSetupModel.swift */,
+				EECBA0531EBA015700CEBB3B /* Constants.swift */,
+				EEF47F001EC5AEB20096F008 /* ClassFeedViewModel.swift */,
+				EEF47F0A1EC7285E0096F008 /* FeedModel.swift */,
+			);
+			name = viewModels;
+			sourceTree = "<group>";
+		};
+		EE8EB7B51EB5B99A00095309 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEB5C4E51EAED9D6005F7199 /* extentions.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		EE9458BC1EADA2A000873A59 = {
+			isa = PBXGroup;
+			children = (
+				EE9458C71EADA2A100873A59 /* Scholacore */,
+				EE9458DE1EADA2A100873A59 /* ScholacoreTests */,
+				EE9458E91EADA2A100873A59 /* ScholacoreUITests */,
+				EE9458C61EADA2A100873A59 /* Products */,
+				27B2890E553AB4CC4A367AF1 /* Pods */,
+				D77701841A9BE862C7EECA6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE9458C61EADA2A100873A59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE9458C51EADA2A100873A59 /* Scholacore.app */,
+				EE9458DB1EADA2A100873A59 /* ScholacoreTests.xctest */,
+				EE9458E61EADA2A100873A59 /* ScholacoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE9458C71EADA2A100873A59 /* Scholacore */ = {
+			isa = PBXGroup;
+			children = (
+				EEB61F471ECDCCEE00BD1935 /* Scholacore.entitlements */,
+				EEF47F031EC69C340096F008 /* Cells */,
+				EEF47F021EC69C230096F008 /* sectionController */,
+				EEF47EFD1EC5AC6B0096F008 /* Reachability */,
+				EEF47EF81EC59D350096F008 /* Models */,
+				EE8EB7B51EB5B99A00095309 /* extension */,
+				EE8EB7B21EB5B91500095309 /* viewModels */,
+				EE9458FA1EADB38900873A59 /* ViewControllers */,
+				EE9458F81EADA47800873A59 /* GoogleService-Info.plist */,
+				EE9458C81EADA2A100873A59 /* AppDelegate.swift */,
+				EE9458CE1EADA2A100873A59 /* Main.storyboard */,
+				EE9458D11EADA2A100873A59 /* Assets.xcassets */,
+				EE9458D31EADA2A100873A59 /* LaunchScreen.storyboard */,
+				EE9458D61EADA2A100873A59 /* Info.plist */,
+				EE8EB76C1EB46DF700095309 /* Model.xcdatamodeld */,
+			);
+			path = Scholacore;
+			sourceTree = "<group>";
+		};
+		EE9458DE1EADA2A100873A59 /* ScholacoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE9458DF1EADA2A100873A59 /* ScholacoreTests.swift */,
+				EE9458E11EADA2A100873A59 /* Info.plist */,
+			);
+			path = ScholacoreTests;
+			sourceTree = "<group>";
+		};
+		EE9458E91EADA2A100873A59 /* ScholacoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE9458EA1EADA2A100873A59 /* ScholacoreUITests.swift */,
+				EE9458EC1EADA2A100873A59 /* Info.plist */,
+			);
+			path = ScholacoreUITests;
+			sourceTree = "<group>";
+		};
+		EE9458FA1EADB38900873A59 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE4491211EBDF96D000ECF73 /* tabbarControllers */,
+				EEB5C4E11EAED499005F7199 /* SignupVC.swift */,
+				EE842A6C1EB04BD60010DB74 /* testViewController.swift */,
+				EE8EB7641EB32D8D00095309 /* ProfileSetupPageViewController.swift */,
+				EE8EB7661EB346CA00095309 /* displaypictureViewController.swift */,
+				EE8EB7681EB3622A00095309 /* profileSetupViewController.swift */,
+				EEF47F0C1EC8611F0096F008 /* DetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EEF47EF81EC59D350096F008 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEF47EF91EC59D430096F008 /* Post.swift */,
+				EEF47F121ECC38A20096F008 /* Lecture.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EEF47EFD1EC5AC6B0096F008 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EEF47EFE1EC5ACB90096F008 /* Reachability.swift */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		EEF47F021EC69C230096F008 /* sectionController */ = {
+			isa = PBXGroup;
+			children = (
+				EEF47F081EC6D1570096F008 /* ClassFeedSectionController.swift */,
+			);
+			name = sectionController;
+			sourceTree = "<group>";
+		};
+		EEF47F031EC69C340096F008 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EEF47F041EC69D6B0096F008 /* PostCollectionCell.swift */,
+				EEF47F051EC69D6B0096F008 /* PostCollectionCell.xib */,
+				EEF47F0E1ECAFD530096F008 /* TimeTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE9458C41EADA2A100873A59 /* Scholacore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9458EF1EADA2A100873A59 /* Build configuration list for PBXNativeTarget "Scholacore" */;
+			buildPhases = (
+				D666075F4B6B0065ACC0C7E8 /* [CP] Check Pods Manifest.lock */,
+				EE9458C11EADA2A100873A59 /* Sources */,
+				EE9458C21EADA2A100873A59 /* Frameworks */,
+				EE9458C31EADA2A100873A59 /* Resources */,
+				BBBC556B58A6BA8B19F0ED90 /* [CP] Embed Pods Frameworks */,
+				4BCEDE2D0C221716A5996B78 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scholacore;
+			productName = Scholacore;
+			productReference = EE9458C51EADA2A100873A59 /* Scholacore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE9458DA1EADA2A100873A59 /* ScholacoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9458F21EADA2A100873A59 /* Build configuration list for PBXNativeTarget "ScholacoreTests" */;
+			buildPhases = (
+				44E52840DC6F7040BD08981C /* [CP] Check Pods Manifest.lock */,
+				EE9458D71EADA2A100873A59 /* Sources */,
+				EE9458D81EADA2A100873A59 /* Frameworks */,
+				EE9458D91EADA2A100873A59 /* Resources */,
+				4DCAFB94682ACBFAB5D26D53 /* [CP] Embed Pods Frameworks */,
+				778A9859CAC131665A2591F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE9458DD1EADA2A100873A59 /* PBXTargetDependency */,
+			);
+			name = ScholacoreTests;
+			productName = ScholacoreTests;
+			productReference = EE9458DB1EADA2A100873A59 /* ScholacoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE9458E51EADA2A100873A59 /* ScholacoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9458F51EADA2A100873A59 /* Build configuration list for PBXNativeTarget "ScholacoreUITests" */;
+			buildPhases = (
+				E1A99238702A4CFC92D12649 /* [CP] Check Pods Manifest.lock */,
+				EE9458E21EADA2A100873A59 /* Sources */,
+				EE9458E31EADA2A100873A59 /* Frameworks */,
+				EE9458E41EADA2A100873A59 /* Resources */,
+				88B716C28C4882AA0562C470 /* [CP] Embed Pods Frameworks */,
+				9CD0D9DD82BB90F67E40ED00 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE9458E81EADA2A100873A59 /* PBXTargetDependency */,
+			);
+			name = ScholacoreUITests;
+			productName = ScholacoreUITests;
+			productReference = EE9458E61EADA2A100873A59 /* ScholacoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE9458BD1EADA2A000873A59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tarun kaushik";
+				TargetAttributes = {
+					EE9458C41EADA2A100873A59 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = K8689CZ4BV;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					EE9458DA1EADA2A100873A59 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = K8689CZ4BV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE9458C41EADA2A100873A59;
+					};
+					EE9458E51EADA2A100873A59 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = K8689CZ4BV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE9458C41EADA2A100873A59;
+					};
+				};
+			};
+			buildConfigurationList = EE9458C01EADA2A100873A59 /* Build configuration list for PBXProject "Scholacore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE9458BC1EADA2A000873A59;
+			productRefGroup = EE9458C61EADA2A100873A59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE9458C41EADA2A100873A59 /* Scholacore */,
+				EE9458DA1EADA2A100873A59 /* ScholacoreTests */,
+				EE9458E51EADA2A100873A59 /* ScholacoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE9458C31EADA2A100873A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9458D51EADA2A100873A59 /* LaunchScreen.storyboard in Resources */,
+				EE9458F91EADA47800873A59 /* GoogleService-Info.plist in Resources */,
+				EE9458D21EADA2A100873A59 /* Assets.xcassets in Resources */,
+				EEF47F071EC69D6B0096F008 /* PostCollectionCell.xib in Resources */,
+				EE9458D01EADA2A100873A59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9458D91EADA2A100873A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9458E41EADA2A100873A59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44E52840DC6F7040BD08981C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4BCEDE2D0C221716A5996B78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scholacore/Pods-Scholacore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCAFB94682ACBFAB5D26D53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScholacoreTests/Pods-ScholacoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		778A9859CAC131665A2591F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScholacoreTests/Pods-ScholacoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88B716C28C4882AA0562C470 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScholacoreUITests/Pods-ScholacoreUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD0D9DD82BB90F67E40ED00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScholacoreUITests/Pods-ScholacoreUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBBC556B58A6BA8B19F0ED90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scholacore/Pods-Scholacore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D666075F4B6B0065ACC0C7E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A99238702A4CFC92D12649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE9458C11EADA2A100873A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB5C4E21EAED499005F7199 /* SignupVC.swift in Sources */,
+				EE1BA5D81EB62E4F0044667A /* signupViewModel.swift in Sources */,
+				EE8EB76B1EB4580D00095309 /* userProfileTableViewController.swift in Sources */,
+				EE1193AE1EB7906A00A9768A /* userProfileModel.swift in Sources */,
+				EEF47F0B1EC7285E0096F008 /* FeedModel.swift in Sources */,
+				EE842A6D1EB04BD60010DB74 /* testViewController.swift in Sources */,
+				EE9458CD1EADA2A100873A59 /* SecondViewController.swift in Sources */,
+				EECBA0521EB9F5DC00CEBB3B /* ProfileSetupModel.swift in Sources */,
+				EEF47EFA1EC59D430096F008 /* Post.swift in Sources */,
+				EEF47F131ECC38A30096F008 /* Lecture.swift in Sources */,
+				EE8EB7671EB346CA00095309 /* displaypictureViewController.swift in Sources */,
+				EEB5C4E61EAED9D6005F7199 /* extentions.swift in Sources */,
+				EE8EB7B41EB5B94800095309 /* loginViewModel.swift in Sources */,
+				EE9458C91EADA2A100873A59 /* AppDelegate.swift in Sources */,
+				EE8EB7691EB3622A00095309 /* profileSetupViewController.swift in Sources */,
+				EEF47F111ECAFD730096F008 /* TimeTableViewController.swift in Sources */,
+				EE9458CB1EADA2A100873A59 /* FirstViewController.swift in Sources */,
+				EEF47F0D1EC8611F0096F008 /* DetailViewController.swift in Sources */,
+				EE8EB7AD1EB4BCA100095309 /* MainTabBarVC.swift in Sources */,
+				EECBA0541EBA015700CEBB3B /* Constants.swift in Sources */,
+				EE8EB76E1EB46DF700095309 /* Model.xcdatamodeld in Sources */,
+				EEF47F0F1ECAFD540096F008 /* TimeTableViewCell.swift in Sources */,
+				EEF47F061EC69D6B0096F008 /* PostCollectionCell.swift in Sources */,
+				EEF47F091EC6D1570096F008 /* ClassFeedSectionController.swift in Sources */,
+				EEF47F011EC5AEB20096F008 /* ClassFeedViewModel.swift in Sources */,
+				EEF47EFF1EC5ACB90096F008 /* Reachability.swift in Sources */,
+				EE8EB7651EB32D8D00095309 /* ProfileSetupPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9458D71EADA2A100873A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9458E01EADA2A100873A59 /* ScholacoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE9458E21EADA2A100873A59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9458EB1EADA2A100873A59 /* ScholacoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE9458DD1EADA2A100873A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE9458C41EADA2A100873A59 /* Scholacore */;
+			targetProxy = EE9458DC1EADA2A100873A59 /* PBXContainerItemProxy */;
+		};
+		EE9458E81EADA2A100873A59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE9458C41EADA2A100873A59 /* Scholacore */;
+			targetProxy = EE9458E71EADA2A100873A59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE9458CE1EADA2A100873A59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9458CF1EADA2A100873A59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE9458D31EADA2A100873A59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9458D41EADA2A100873A59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE9458ED1EADA2A100873A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE9458EE1EADA2A100873A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE9458F01EADA2A100873A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785EFA4CA7991174FB21BC68 /* Pods-Scholacore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Scholacore/Scholacore.entitlements;
+				DEVELOPMENT_TEAM = K8689CZ4BV;
+				INFOPLIST_FILE = Scholacore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.Scholacore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE9458F11EADA2A100873A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43911A8385D04CC3D2597B2 /* Pods-Scholacore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Scholacore/Scholacore.entitlements;
+				DEVELOPMENT_TEAM = K8689CZ4BV;
+				INFOPLIST_FILE = Scholacore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.Scholacore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE9458F31EADA2A100873A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ED7E9D5921CA90FF693F0D2 /* Pods-ScholacoreTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K8689CZ4BV;
+				INFOPLIST_FILE = ScholacoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ScholacoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scholacore.app/Scholacore";
+			};
+			name = Debug;
+		};
+		EE9458F41EADA2A100873A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54979BCDDA7BC56E7B4C695D /* Pods-ScholacoreTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = K8689CZ4BV;
+				INFOPLIST_FILE = ScholacoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ScholacoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scholacore.app/Scholacore";
+			};
+			name = Release;
+		};
+		EE9458F61EADA2A100873A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6288EF80992C7BC829E1D5E /* Pods-ScholacoreUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K8689CZ4BV;
+				INFOPLIST_FILE = ScholacoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ScholacoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Scholacore;
+			};
+			name = Debug;
+		};
+		EE9458F71EADA2A100873A59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C881622F11BBB79F7EC0F4 /* Pods-ScholacoreUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = K8689CZ4BV;
+				INFOPLIST_FILE = ScholacoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.ScholacoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Scholacore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE9458C01EADA2A100873A59 /* Build configuration list for PBXProject "Scholacore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9458ED1EADA2A100873A59 /* Debug */,
+				EE9458EE1EADA2A100873A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9458EF1EADA2A100873A59 /* Build configuration list for PBXNativeTarget "Scholacore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9458F01EADA2A100873A59 /* Debug */,
+				EE9458F11EADA2A100873A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9458F21EADA2A100873A59 /* Build configuration list for PBXNativeTarget "ScholacoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9458F31EADA2A100873A59 /* Debug */,
+				EE9458F41EADA2A100873A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE9458F51EADA2A100873A59 /* Build configuration list for PBXNativeTarget "ScholacoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9458F61EADA2A100873A59 /* Debug */,
+				EE9458F71EADA2A100873A59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE8EB76C1EB46DF700095309 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE8EB76D1EB46DF700095309 /* Model.xcdatamodel */,
+			);
+			currentVersion = EE8EB76D1EB46DF700095309 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE9458BD1EADA2A000873A59 /* Project object */;
+}
